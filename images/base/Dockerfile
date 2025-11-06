@@ -1,10 +1,10 @@
-FROM ubuntu:23.04
+FROM ubuntu:25.10
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN \
     apt-get -y update && \
     apt-get -y dist-upgrade && \
-    apt-get -y install --no-install-recommends build-essential yasm nasm \
+    apt-get -y install build-essential yasm nasm \
         xxd pkgconf curl wget unzip zip git subversion mercurial \
         autoconf automake libtool libtool-bin autopoint gettext cmake clang meson ninja-build \
         texinfo texi2html help2man flex bison groff \
